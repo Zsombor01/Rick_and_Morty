@@ -1,0 +1,161 @@
+.Home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+table {
+	width: 50vw;
+	max-width: 70vw;
+	background-color: white;
+	color: black;
+	border-collapse: separate;
+	border-spacing: 0;
+	border-radius: 20px;
+}
+
+th {
+	background-color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+th:first-child {
+	padding-left: 1.5rem;
+	border-top-left-radius: 20px;
+}
+
+th:last-child {
+	border-top-right-radius: 20px;
+	padding-right: 1.5rem;
+	padding: 1rem;
+}
+
+td,
+th {
+	text-align: center;
+	padding: 0.8rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	border: none;
+	border-bottom: 4px solid black;
+}
+
+tr:last-child td {
+	border-bottom: none;
+}
+
+.character-image {
+	width: 100px;
+	height: auto;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.title-container {
+	margin-top: 1.2rem;
+}
+
+.title-img {
+	display: block;
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.pagination-btns {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+	gap: 5rem;
+}
+
+.prevPage-btn {
+	display: inline-block;
+	width: 12.5rem;
+	background-color: rgb(255, 255, 255, 0.7);
+	padding: 0.5rem 3rem;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.prevPage-btn span {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.prevPage-btn span::after {
+	content: '\00AB';
+	position: absolute;
+	top: 0;
+	left: -20px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.prevPage-btn:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.prevPage-btn:hover span {
+	padding-left: 15px;
+}
+
+.prevPage-btn:hover span:after {
+	opacity: 1;
+	left: 0;
+}
+
+.nextPage-btn {
+	display: inline-block;
+	width: 12.5rem;
+	background-color: rgb(255, 255, 255, 0.7);
+	padding: 0.5rem 3rem;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.nextPage-btn span {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.nextPage-btn span::after {
+	content: '\00bb';
+	position: absolute;
+	top: 0;
+	right: -20px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.nextPage-btn:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.nextPage-btn:hover span {
+	padding-right: 15px;
+}
+
+.nextPage-btn:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.searchBar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.5rem 0 2rem 0;
+}

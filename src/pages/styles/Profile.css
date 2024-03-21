@@ -1,0 +1,77 @@
+.profile-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-container {
+	margin-top: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.character_image {
+	width: 270px;
+	border-radius: 10px;
+}
+
+.character {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem;
+	gap: 2rem;
+	border: 2px solid white;
+	border-radius: 20px;
+}
+
+.character-details {
+	margin-top: 1.5rem;
+}
+
+.character-name,
+.character-species,
+.character-status,
+.character-origin,
+.character-gender {
+	margin-bottom: 1.5rem;
+}
+
+.home-btn {
+	display: inline-block;
+	background-color: rgb(255, 255, 255, 0.7);
+	margin-top: 3rem;
+	padding: 0.5rem 3rem;
+	width: 10rem;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.home-btn span {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.home-btn span::after {
+	content: '\00AB';
+	position: absolute;
+	top: 0;
+	left: -20px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.home-btn:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.home-btn:hover span {
+	padding-left: 15px;
+}
+
+.home-btn:hover span:after {
+	opacity: 1;
+	left: 0;
+}
